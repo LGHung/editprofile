@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./test4.css">
+</head>
+<body>
+    <a href="https://lghung.github.io/thehomepage/"><img class="imgs" src="https://www.apmedia.vn/wp-content/uploads/2018/02/Home-Icon.png"></a>
+    <div class="profile-container">
+        <div class="banle">
+            <div class="profile-container-top">
+                <img class="profile-img" id="profile-img" src="https://st.quantrimang.com/photos/image/072015/22/avatar.jpg">
+                <div class="top-text-container">
+                    <p class="profile-name" id="profile-name">Profile name: <span id="profile-names"><input class="za_input" id="change-profilename" placeholder="change profile name"></input></span></p>
+                    <p class="account-name" id="account-name">Account name: can't be change</p>
+                    <p class="id" id="id">
+                        id: <span><input class="za_input" id="change-id" placeholder="Nhập id để hoàn thành"></input></span>
+                    </p>
+                </div>
+               
+            </div>
+            <div class="bottom-container">
+                <p class="infi">
+                    Thông tin cá nhân
+                </p>
+                <p class="email">
+                    Email: can't be change</span>
+                </p>
+                <p class="phone">
+                    số điện thoại: <span class="inputphone"><input class="za_input" id="change-sdt" placeholder="change sdt"></input></span>
+                </p>
+                <p class="cccd">
+                    Mã CCCD : <span class="inputcccd"><input class="za_input" id="change-cccd" placeholder="change cccd"></input></span>
+                </p>
+                <p class="cash">
+                   Số tiền trong tài khoản : <span class="inputcash">Vui lòng đến cơ sở gần nhất để chuyển tiền vào tài khoản</span>
+                </p>
+            </div>
+            <div class="button-container">
+                <button id="finishchange">Hoàn tất thay đổi</button>
+                <button id="cancel">Hủy</button>
+            </div>
+        </div>
+    </div> 
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+  
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyA3oPTL7N2fv3ucPLCzkFZj9QRfWryeWnk",
+      authDomain: "test2-7f3ee.firebaseapp.com",
+      projectId: "test2-7f3ee",
+      storageBucket: "test2-7f3ee.appspot.com",
+      messagingSenderId: "968101558034",
+      appId: "1:968101558034:web:b18f070e4461a02337a5cb",
+      databaseURL:
+      "https://test2-7f3ee-default-rtdb.asia-southeast1.firebasedatabase.app/",
+        };
+  
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+      <script type="module" src="./test4.js"></script> 
+</body>
+</html>
